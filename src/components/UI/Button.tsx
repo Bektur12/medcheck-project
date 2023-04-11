@@ -24,7 +24,7 @@ const StyledButton = styled(MuiButton)(
   ({ width, variant }: { width?: string; variant: string }) => ({
     '&.MuiButton-root': {
       color: variant === 'outlined' ? '#FFFFFF' : '#048741',
-      background: variant === 'outlined' ? '#08DF7D' : '#FFFFFF',
+      background: variant === 'outlined' ? '#048741' : '#FFFFFF',
       width,
       borderRadius: '24px;',
       textTransform: 'uppercase',

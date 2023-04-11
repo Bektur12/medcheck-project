@@ -5,15 +5,7 @@ import styled from '@emotion/styled'
 type InputProps = TextFieldProps & {}
 
 export const Input: FC<InputProps> = ({ value, onChange, type, placeholder }) => {
-  return (
-    <InputStyled
-      value={value}
-      onChange={onChange}
-      type={type}
-      placeholder={placeholder}
-      // fullWidth
-    />
-  )
+  return <InputStyled value={value} onChange={onChange} type={type} placeholder={placeholder} />
 }
 
 const InputStyled = styled(TextField)(() => ({
