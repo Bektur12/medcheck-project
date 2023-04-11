@@ -5,5 +5,6 @@ import { ReactComponent as MedCheckIcon } from '../assets/image/medcheck.svg'
 import { ReactComponent as Instagram } from '../assets/image/instagram.svg'
 import { ReactComponent as Telegram } from '../assets/image/telegramm.svg'
 import { ReactComponent as Whatsapp } from '../assets/image/whatsapp.svg'
+import { ReactComponent as Profile } from '../assets/image/profile.svg'
 
-export { LabelIcon, ClockIcon, MedCheckIcon, Instagram, Telegram, Whatsapp }
+export { LabelIcon, ClockIcon, MedCheckIcon, Instagram, Telegram, Whatsapp, Profile }
