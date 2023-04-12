@@ -7,4 +7,6 @@ import { ReactComponent as Telegram } from '../assets/image/telegramm.svg'
 import { ReactComponent as Whatsapp } from '../assets/image/whatsapp.svg'
 import { ReactComponent as Profile } from '../assets/image/profile.svg'
 
-export { LabelIcon, ClockIcon, MedCheckIcon, Instagram, Telegram, Whatsapp, Profile }
+import { ReactComponent as Heart } from '../assets/image/herd.svg'
+
+export { LabelIcon, ClockIcon, MedCheckIcon, Instagram, Telegram, Whatsapp, Profile, Heart }

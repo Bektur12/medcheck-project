@@ -56,7 +56,6 @@ export default Header
 const HeaderStyled = styled('div')`
   width: 100%;
   background-color: #ffff;
-  padding: 30px 120px 30px 120px;
   display: flex;
   flex-direction: column;
   gap: 12px;
