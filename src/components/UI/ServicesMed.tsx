@@ -47,6 +47,7 @@ const InnerContainer = styled('div')`
 const Container = styled('div')`
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 30px;
   margin-top: 120px;
   div {
