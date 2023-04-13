@@ -1,16 +1,16 @@
 /* eslint-disable no-irregular-whitespace */
 import React from 'react'
 import { styled } from '@mui/material'
-import Header from '../../layout/Header'
 import image from '../../assets/image/Mask.png'
 import { Button } from '../../components/UI/Button'
 import SectionTwo from './SectionTwo'
-import { ServicesMed } from '../../components/UI/ServicesMed'
+import { ServicesMed } from './ServicesMed'
+import BestDoctors from './BestDoctors'
+import SectionTitle from '../../components/UI/SectionTitle'
 
-export const LandingPage = () => {
+export const MainPage = () => {
   return (
     <Container>
-      <Header />
       <LandingHero>
         <InnerContainer>
           <h1>Добро пожаловать в клинику MedCheck</h1>
@@ -22,7 +22,7 @@ export const LandingPage = () => {
         </InnerContainer>
       </LandingHero>
       <ServicesSection>
-        <h2>Почему нас выбирают?</h2>
+        <SectionTitle text='Почему' active='нас выбирают?' />
         <div>
           <SectionTwo
             number={1}
@@ -42,6 +42,7 @@ export const LandingPage = () => {
         </div>
       </ServicesSection>
       <ServicesMed />
+      <BestDoctors />
     </Container>
   )
 }

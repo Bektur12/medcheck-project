@@ -10,3 +10,12 @@ import { ReactComponent as Profile } from '../assets/image/profile.svg'
 import { ReactComponent as Heart } from '../assets/image/herd.svg'
 
 export { LabelIcon, ClockIcon, MedCheckIcon, Instagram, Telegram, Whatsapp, Profile, Heart }
+
+// / BestDoctor
+import daria from '../assets/image/daria.png'
+import antux from '../assets/image/antux.png'
+import dmitry from '../assets/image/dmitriy.png'
+import elena from '../assets/image/elena.png'
+import misko from '../assets/image/misko.png'
+
+export { daria, antux, dmitry, elena, misko }

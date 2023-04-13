@@ -54,6 +54,7 @@ const Header = () => {
 export default Header
 
 const HeaderStyled = styled('div')`
+  padding: 22px 120px 0px 120px;
   width: 100%;
   background-color: #ffff;
   display: flex;

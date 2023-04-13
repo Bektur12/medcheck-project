@@ -1,6 +1,7 @@
 import styled from '@emotion/styled'
 import React, { FC, useCallback } from 'react'
-import { Button } from './Button'
+import { Button } from '../../components/UI/Button'
+import SectionTitle from '../../components/UI/SectionTitle'
 
 export const ServicesMed: FC = () => {
   const render = useCallback(() => {
@@ -16,9 +17,7 @@ export const ServicesMed: FC = () => {
   return (
     <Container>
       <InnerContainer>
-        <h2>
-          Наши <span>услуги</span>
-        </h2>
+        <SectionTitle text='Наши' active='услуги' />
         <p>За все время работы клиника приняла более 1 млн. пациентов.</p>
         <div> {render()}</div>
       </InnerContainer>
@@ -53,14 +52,7 @@ const Container = styled('div')`
   div {
     display: flex;
   }
-  h2 {
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 49px;
-    color: #222222;
-  }
+
   span {
     color: #048741;
   }
