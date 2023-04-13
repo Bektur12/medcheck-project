@@ -1,11 +1,11 @@
 import React from 'react'
 import './App.css'
-import { LandingPage } from './pages/landing/LandingPage'
+import { AppRoutes } from './routes/AppRoutes'
 
 function App() {
   return (
     <div className='App'>
-      <LandingPage />
+      <AppRoutes />
     </div>
   )
 }
