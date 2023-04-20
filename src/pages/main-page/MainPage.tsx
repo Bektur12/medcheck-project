@@ -7,6 +7,8 @@ import SectionTwo from './SectionTwo'
 import { ServicesMed } from './ServicesMed'
 import BestDoctors from './BestDoctors'
 import SectionTitle from '../../components/UI/SectionTitle'
+import { AboutClinic } from './AboutClinic'
+import { Form } from './Form'
 
 export const MainPage = () => {
   return (
@@ -24,25 +26,17 @@ export const MainPage = () => {
       <ServicesSection>
         <SectionTitle text='Почему' active='нас выбирают?' />
         <div>
-          <SectionTwo
-            number={1}
-            title='Высокий профессионализм сотрудников'
-            description='Медицинская лицензия, большой опыт врачей и постоянное повышение квалификации.'
-          />
-          <SectionTwo
-            number={1}
-            title='Высокий профессионализм сотрудников'
-            description='Медицинская лицензия, большой опыт врачей и постоянное повышение квалификации.'
-          />
-          <SectionTwo
-            number={1}
-            title='Высокий профессионализм сотрудников'
-            description='Медицинская лицензия, большой опыт врачей и постоянное повышение квалификации.'
-          />
+          <SectionTwo />
         </div>
       </ServicesSection>
       <ServicesMed />
+      <AboutOurClinic>
+        <SectionTitle text='О нашей клинике' active='“MedCheck”' />
+
+        <AboutClinic />
+      </AboutOurClinic>
       <BestDoctors />
+      <Form />
     </Container>
   )
 }
@@ -68,9 +62,9 @@ const LandingHero = styled('div')`
   align-items: center;
   width: 100%;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 70vh;
   background-image: url(${image});
-  background-position: left 90% top 10%;
+  background-position: left 99% top 10%;
 `
 
 const InnerContainer = styled('div')`
@@ -91,10 +85,13 @@ const Title = styled('p')`
 `
 
 const ServicesSection = styled('div')`
-  display: flex;
-  flex-direction: column;
   div {
+    margin-top: 50px;
     display: flex;
     gap: 19px;
+    width: 100%;
   }
+`
+const AboutOurClinic = styled('div')`
+  margin-top: 120px;
 `

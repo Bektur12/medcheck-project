@@ -19,3 +19,11 @@ import elena from '../assets/image/elena.png'
 import misko from '../assets/image/misko.png'
 
 export { daria, antux, dmitry, elena, misko }
+
+// AboutClinic///
+import clinic from '../assets/image/clinic.png'
+import image2 from '../assets/image/image2.png'
+import image3 from '../assets/image/image3.png'
+import image4 from '../assets/image/image4.png'
+
+export { clinic, image2, image3, image4 }

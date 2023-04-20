@@ -5,8 +5,8 @@ import AdminRoutes from './AdminRoutes'
 const ROLE_CONTROLLER: {
   [key: string]: JSX.Element
 } = {
-  ['ADMIN']: <AdminRoutes />,
-  ['USER']: <UserRoutes />,
+  ADMIN: <AdminRoutes />,
+  USER: <UserRoutes />,
 }
 export const AppRoutes = () => {
   const ROLE = 'USER'

@@ -5,12 +5,12 @@ import SectionTitle from '../../components/UI/SectionTitle'
 
 export const ServicesMed: FC = () => {
   const render = useCallback(() => {
-    return [1, 2, 3, 4, 5, 6, 7].map((item) => {
+    return [1, 2, 3, 4, 5, 6, 7, 8, 9].map((item) => {
       return (
-        <CardContent key={item}>
-          <Card key={item}>sd</Card>
-          <span>{item}</span>
-        </CardContent>
+        <div key={item}>
+          <Card>sd</Card>
+          <p>{item}</p>
+        </div>
       )
     })
   }, [])
@@ -19,7 +19,7 @@ export const ServicesMed: FC = () => {
       <InnerContainer>
         <SectionTitle text='Наши' active='услуги' />
         <p>За все время работы клиника приняла более 1 млн. пациентов.</p>
-        <div> {render()}</div>
+        <CardContent>{render()}</CardContent>
       </InnerContainer>
       <Button width='147px'>Смотреть все</Button>
     </Container>
@@ -27,15 +27,16 @@ export const ServicesMed: FC = () => {
 }
 
 const Card = styled('div')`
-  height: 20vh;
-  width: 70%;
+  padding: 20px;
+  height: 102px;
+  width: 106px;
   background-color: red;
   border-radius: 18px;
 `
 const CardContent = styled('div')`
-  display: flex;
-  flex-direction: column;
-  width: 30%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 30px;
 `
 const InnerContainer = styled('div')`
   display: flex;
@@ -49,9 +50,6 @@ const Container = styled('div')`
   align-items: center;
   gap: 30px;
   margin-top: 120px;
-  div {
-    display: flex;
-  }
 
   span {
     color: #048741;

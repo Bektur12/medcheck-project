@@ -6,10 +6,8 @@ import { MainPage } from '../pages/main-page/MainPage'
 export const UserRoutes = () => {
   return (
     <Routes>
-      <Route path='/' element={<Navigate replace to='/user' />} />
-      <Route path='/user' element={<Layout />}>
-        <Route element={<Navigate replace to='/user/lenta' />} index />
-        <Route path='lenta' element={<MainPage />} />
+      <Route path='/' element={<Layout />}>
+        <Route path='/' element={<MainPage />} />
       </Route>
     </Routes>
   )

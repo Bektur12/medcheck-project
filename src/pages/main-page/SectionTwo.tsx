@@ -1,18 +1,34 @@
-import React, { FC } from 'react'
+import React from 'react'
 import { styled } from '@mui/material'
+const INFO = [
+  {
+    number: 1,
+    title: 'Высокий профессионализм сотрудников',
+    description: 'Медицинская лицензия, большой опыт врачей и постоянное повышение квалификации.',
+  },
+  {
+    number: 4,
+    title: 'Высокий профессионализм сотрудников',
+    description: 'Медицинская лицензия, большой опыт врачей и постоянное повышение квалификации.',
+  },
+  {
+    number: 2,
+    title: 'Высокий профессионализм сотрудников',
+    description: 'Медицинская лицензия, большой опыт врачей и постоянное повышение квалификации.',
+  },
+]
 
-interface SectionProps {
-  number: number
-  title: string
-  description: string
-}
-const SectionTwo: FC<SectionProps> = ({ number, title, description }) => {
+const SectionTwo = () => {
   return (
-    <Container>
-      <h1>{number}</h1>
-      <h2>{title}</h2>
-      <p> {description}</p>
-    </Container>
+    <>
+      {INFO.map(({ number, title, description }) => (
+        <Container key={Math.random()}>
+          <h1>{number}</h1>
+          <h2>{title}</h2>
+          <p> {description}</p>
+        </Container>
+      ))}
+    </>
   )
 }
 
