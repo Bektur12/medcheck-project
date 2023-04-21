@@ -8,3 +8,10 @@ import { ReactComponent as Whatsapp } from '../assets/image/whatsapp.svg'
 import { ReactComponent as Profile } from '../assets/image/profile.svg'
 
 export { LabelIcon, ClockIcon, MedCheckIcon, Instagram, Telegram, Whatsapp, Profile }
+
+import { ReactComponent as Location } from '../assets/image/location.svg'
+import { ReactComponent as Clock } from '../assets/image/clocki.svg'
+import { ReactComponent as Telephone } from '../assets/image/telephone.svg'
+import { ReactComponent as Message } from '../assets/image/message.svg'
+
+export { Location, Clock, Telephone, Message }
