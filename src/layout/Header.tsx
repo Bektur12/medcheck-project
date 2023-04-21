@@ -42,7 +42,7 @@ const Header = () => {
           <a>Прайс</a>
           <a>Контакты</a>
         </div>
-        <Button width='90%'>получить результаты</Button>
+        <Button width='205px'>получить результаты</Button>
         <Button variant='outlined' width='158px'>
           запись онлайн
         </Button>
@@ -54,9 +54,9 @@ const Header = () => {
 export default Header
 
 const HeaderStyled = styled('div')`
+  padding: 22px 0px 0px 100px;
   width: 100%;
   background-color: #ffff;
-  padding: 30px 120px 30px 120px;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -75,9 +75,10 @@ const HeaderInfo = styled('div')`
 
 const HeaderTop = styled('div')`
   display: grid;
-  grid-template-columns: 30% 30% 10% 12% 10%;
+  grid-template-columns: 30% 30% 19% 12% 10%;
   column-gap: 35px;
   border-bottom: 1px solid #d9d9d9;
+  width: 92%;
   padding-bottom: 12px;
 `
 
@@ -92,7 +93,7 @@ const IconContainer = styled('div')`
 
 const HeaderBottom = styled('div')`
   display: grid;
-  grid-template-columns: 25% 37% 20% 20%;
+  grid-template-columns: 25% 46% 13% 20%;
   align-items: center;
   div {
     display: flex;
