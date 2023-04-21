@@ -27,3 +27,10 @@ import image3 from '../assets/image/image3.png'
 import image4 from '../assets/image/image4.png'
 
 export { clinic, image2, image3, image4 }
+
+import { ReactComponent as Location } from '../assets/image/location.svg'
+import { ReactComponent as Clock } from '../assets/image/clocki.svg'
+import { ReactComponent as Telephone } from '../assets/image/telephone.svg'
+import { ReactComponent as Message } from '../assets/image/message.svg'
+
+export { Location, Clock, Telephone, Message }
