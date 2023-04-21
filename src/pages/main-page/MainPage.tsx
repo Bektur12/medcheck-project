@@ -8,7 +8,7 @@ import { ServicesMed } from './ServicesMed'
 import BestDoctors from './BestDoctors'
 import SectionTitle from '../../components/UI/SectionTitle'
 import { AboutClinic } from './AboutClinic'
-import { Form } from './Form'
+import { ContactForm } from './ContactForm'
 
 export const MainPage = () => {
   return (
@@ -17,8 +17,8 @@ export const MainPage = () => {
         <InnerContainer>
           <h1>Добро пожаловать в клинику MedCheck</h1>
           <Title>
-            Международный Медицинская клиника «MedCheck — это клиника, в которой применяются
-            новейшие диагностические и лечебные технологии и ведут прием лучшие специалисты.
+            Международный Медицинская клиника «MedCheck — это клиника, в которой применяются
+            новейшие диагностические и лечебные технологии и ведут прием лучшие специалисты.
           </Title>
           <Button>оставьте заявку</Button>
         </InnerContainer>
@@ -36,7 +36,7 @@ export const MainPage = () => {
         <AboutClinic />
       </AboutOurClinic>
       <BestDoctors />
-      <Form />
+      <ContactForm />
     </Container>
   )
 }
@@ -93,5 +93,5 @@ const ServicesSection = styled('div')`
   }
 `
 const AboutOurClinic = styled('div')`
-  margin-top: 120px;
+  margin: 120px 0px 120px 0px;
 `
