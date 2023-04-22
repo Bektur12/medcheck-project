@@ -9,7 +9,6 @@ import BestDoctors from './BestDoctors'
 import SectionTitle from '../../components/UI/SectionTitle'
 import { AboutClinic } from './AboutClinic'
 import { ContactForm } from './ContactForm'
-import { Select } from '../../components/UI/select/Select'
 
 export const MainPage = () => {
   return (
@@ -37,7 +36,6 @@ export const MainPage = () => {
       </AboutOurClinic>
       <BestDoctors />
       <ContactForm />
-      <Select />
     </Container>
   )
 }
