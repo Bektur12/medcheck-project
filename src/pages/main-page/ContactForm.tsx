@@ -42,7 +42,7 @@ const FormContainer = styled('div')`
   height: 40%;
   padding: 71px 70px;
   position: relative;
-  z-index: 1;
+  z-index: -1;
   left: 200px;
 `
 
