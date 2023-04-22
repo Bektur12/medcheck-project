@@ -32,7 +32,6 @@ export const MainPage = () => {
       <ServicesMed />
       <AboutOurClinic>
         <SectionTitle text='О нашей клинике' active='“MedCheck”' />
-
         <AboutClinic />
       </AboutOurClinic>
       <BestDoctors />
